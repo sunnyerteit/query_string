@@ -1,0 +1,20 @@
+{
+  "name": "query_test",
+  "version": "1.0.0",
+  "description": "Takes an url query and converts to json",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "query",
+    "js",
+    "node",
+    "url"
+  ],
+  "author": "Sunny",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,94 @@
+{
+    "bin1": {
+        "bin_id": 5421,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 36.1,
+        "saturation": 32.1,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin2": {
+        "bin_id": 5422,
+        "name": "Telenor Arena Nord",
+        "type": "papir",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin4": {
+        "bin_id": 5423,
+        "name": "Telenor Arena Nord",
+        "type": "glass",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin5": {
+        "bin_id": 5424,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin6": {
+        "bin_id": 5425,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin7": {
+        "bin_id": 5426,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin8": {
+        "bin_id": 5427,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin9": {
+        "bin_id": 5428,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "bin10": {
+        "bin_id": 5429,
+        "name": "Telenor Arena Nord",
+        "type": "restavfall",
+        "battery": 34.1,
+        "saturation": 21.2,
+        "compress": 0,
+        "lat": 59.902897,
+        "lng": 10.625227
+    },
+    "battery": "36.2",
+    "saturation": "21"
+}

@@ -32,17 +32,19 @@ function update_bin(original, incoming) {
 // Create server
 var app = express();
 
+/*
 app.get('/get/', function (req, res) {
     let json = JSON.stringify(m, null, 4);
     res.send({compress: m.bin1.compress});
 });
+*/
 
 app.get('/send/', function (req, res) {
+    let json = JSON.stringify(m, null, 4);
+    res.send({compress: m.bin1.compress});
     update_bin(m.bin1, req.query);
     // Write beautified json
-    let json = JSON.stringify(m, null, 4);
     fs.writeFile('bins.json', json, 'utf8');
-    res.send('Update successful!');
 });
 
 app.get('/data/', function (req, res) {

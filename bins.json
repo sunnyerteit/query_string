@@ -3,8 +3,8 @@
         "bin_id": 5421,
         "name": "Telenor Arena Nord",
         "type": "restavfall",
-        "battery": 36.1,
-        "saturation": 32.1,
+        "battery": 34,
+        "saturation": 32.2,
         "compress": 0,
         "lat": 59.902897,
         "lng": 10.625227
@@ -88,7 +88,5 @@
         "compress": 0,
         "lat": 59.902897,
         "lng": 10.625227
-    },
-    "battery": "36.2",
-    "saturation": "21"
+    }
 }

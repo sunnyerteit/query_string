@@ -4,19 +4,6 @@ fs = require('fs');
 
 let m = JSON.parse(fs.readFileSync('bins.json').toString());
 
-//querystring bin_id=5421&battery=36.2&saturation=40.2
-
-/*
-// Dummy value
-const x = {
-    bin1: {
-        battery: 15.2,
-        saturation: 40.2
-    }
-}
-*/
-
-
 // Updates original object
 function update_json(original, incoming) {
     Object.keys(incoming).forEach(function (key_1) {
@@ -35,7 +22,7 @@ function update_bin(original, incoming) {
             original[key] = incoming[key];
         }
         // Update if previous value is num
-        else if (!!parseFloat(incoming[key])) {
+        else if (!isNaN(incoming[key])) {
             original[key] = parseFloat(incoming[key]);
         }
     });
@@ -46,11 +33,22 @@ function update_bin(original, incoming) {
 var app = express();
 
 app.get('/get/', function (req, res) {
+    let json = JSON.stringify(m, null, 4);
+    res.send({compress: m.bin1.compress});
+});
+
+app.get('/send/', function (req, res) {
     update_bin(m.bin1, req.query);
-    // Export beautified json
+    // Write beautified json
     let json = JSON.stringify(m, null, 4);
     fs.writeFile('bins.json', json, 'utf8');
-    res.send(m);
+    res.send('Update successful!');
+});
+
+app.get('/data/', function (req, res) {
+    // Export beautified json
+    let json = JSON.stringify(m, null, 4);
+    res.set({'Content-Type': 'application/json; charset=utf-8'}).send(json);
 });
 
 app.listen(3000);

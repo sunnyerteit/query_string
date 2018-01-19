@@ -7,7 +7,9 @@
         "saturation": 32.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-19T09:47:50.198Z",
+        "cycles": 14
     },
     "bin2": {
         "bin_id": 5422,
@@ -17,7 +19,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin4": {
         "bin_id": 5423,
@@ -27,7 +31,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin5": {
         "bin_id": 5424,
@@ -37,7 +43,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin6": {
         "bin_id": 5425,
@@ -47,7 +55,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin7": {
         "bin_id": 5426,
@@ -57,7 +67,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin8": {
         "bin_id": 5427,
@@ -67,7 +79,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin9": {
         "bin_id": 5428,
@@ -77,7 +91,9 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     },
     "bin10": {
         "bin_id": 5429,
@@ -87,6 +103,8 @@
         "saturation": 21.2,
         "compress": 0,
         "lat": 59.902897,
-        "lng": 10.625227
+        "lng": 10.625227,
+        "timestamp": "2018-01-23T06:00:00.000Z",
+        "cycles": 0
     }
 }

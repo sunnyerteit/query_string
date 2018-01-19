@@ -28,6 +28,18 @@ function update_bin(original, incoming) {
     });
 }
 
+// Check if bin is compressing
+function compress_cycle(original, incoming) {
+    if (original.compress == 1 && parseFloat(incoming.compress) == 0 ) {
+
+        // Add compress cycle
+        original.cycles += 1;
+
+        // Add new timestamp
+        var timestamp = new Date();
+        original.timestamp = timestamp;
+    }
+}
 
 // Create server
 var app = express();
@@ -41,8 +53,12 @@ app.get('/get/', function (req, res) {
 
 app.get('/send/', function (req, res) {
     let json = JSON.stringify(m, null, 4);
-    res.send({compress: m.bin1.compress});
+    res.send({ compress: m.bin1.compress });
+    // Check if compress is changed from active to inactive
+    compress_cycle(m.bin1, req.query);
+    // Update data based on query string
     update_bin(m.bin1, req.query);
+
     // Write beautified json
     fs.writeFile('bins.json', json, 'utf8');
 });
@@ -50,7 +66,7 @@ app.get('/send/', function (req, res) {
 app.get('/data/', function (req, res) {
     // Export beautified json
     let json = JSON.stringify(m, null, 4);
-    res.set({'Content-Type': 'application/json; charset=utf-8'}).send(json);
+    res.set({ 'Content-Type': 'application/json; charset=utf-8' }).send(json);
 });
 
 app.listen(3000);

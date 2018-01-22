@@ -65,6 +65,7 @@ app.get('/send/', function (req, res) {
 });
 
 app.get('/data/', function (req, res) {
+    let m = JSON.parse(fs.readFileSync('bins.json').toString());
     // Export beautified json
     let json = JSON.stringify(m, null, 4);
     res.set({ 'Content-Type': 'application/json; charset=utf-8' }).send(json);
